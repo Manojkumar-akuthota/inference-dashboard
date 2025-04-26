@@ -1,0 +1,51 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e2c;
+  color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #1f1f4b;
+  color: #00b894;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+#exportBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card {
+  background: #1f1f4b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 184, 148, 0.2);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ecf0f1;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #34495e;
+  text-align: left;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}

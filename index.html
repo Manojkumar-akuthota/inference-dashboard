@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Behaviour Inference Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inference Attacks on User Behaviour</h1>
+    <button id="exportBtn">Export Click Data</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Clickstream Data</h2>
+      <table id="clickTable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Page</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- dynamic content -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Click Activity Over Time</h2>
+      <canvas id="clickChart"></canvas>
+    </section>
+
+    <section class="card">
+      <h2>Metadata Collected</h2>
+      <ul id="metadataList">
+        <!-- dynamic content -->
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Inference Result</h2>
+      <p id="inference">Analyzing...</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
